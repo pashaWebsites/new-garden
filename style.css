@@ -1,0 +1,100 @@
+
+
+
+#contacts .contacts-bar { list-style:none; margin-top: 0px;
+  position:fixed;
+     width:100%;
+     top:0;
+     z-index:99998; }
+#contacts .contacts-bar li {
+     width:100%;
+     top:0;
+     z-index:99998; }
+
+#contacts .contacts-bar li a {
+  position:fixed;
+     width:100%;
+     top:0;
+     z-index:99999;
+  text-decoration: none;
+  padding-left: 0px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+.contacts-bar .contacts-button a { background:url("test/test.html") no-repeat 0px -2px transparent; }
+
+
+#new_garden .new_garden-bar { list-style:none; margin-top: 0px;
+    position:fixed;
+     width:100%;
+     left: 0vw;
+     top:0;
+     z-index:99999; }
+#new_garden .new_garden-bar li {
+     width:100%;
+     top:0;
+
+     z-index:99999; }
+
+#new_garden .new_garden-bar li a {
+  display: flex;
+  justify-content: center;
+
+  width:100%;
+  top:0;
+  z-index:99999;
+  text-decoration: none;
+  padding-left: 0px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+/* Icons courtesy of Thom : http://pixelb.in/assorted-pixel-perfect-14px-icon-set-286/ */
+
+body {
+  background: #000000;
+  font-size: 30px;
+  color: #000;
+  background: #fffff;
+  margin: 0;
+  padding: 0;
+  height: calc(100vh - 0vh);
+  margin: 0px;
+  overflow: -moz-scrollbars-vertical;
+  overflow-x: hidden;
+  overflow-y: auto;
+ position: relative;
+}
+
+
+.swiper-container {
+  height: calc(100vh - 0vh);
+  margin: 0px;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.slide-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
