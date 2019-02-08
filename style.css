@@ -25,7 +25,7 @@
   font-weight: 300;
 }
 
-.contacts-bar .contacts-button a { background:url("test/test.html") no-repeat 0px -2px transparent; }
+.contacts-bar .contacts-button a { background:url("test.html") no-repeat 0px -2px transparent; }
 
 
 #new_garden .new_garden-bar { list-style:none; margin-top: 0px;
