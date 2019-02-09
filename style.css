@@ -1,60 +1,23 @@
 
 
-
-#contacts .contacts-bar { list-style:none; margin-top: 0px;
-  position:fixed;
-     width:100%;
-     top:0;
-     z-index:99998; }
-#contacts .contacts-bar li {
-     width:100%;
-     top:0;
-     z-index:99998; }
-
-#contacts .contacts-bar li a {
-  position:fixed;
-     width:100%;
-     top:0;
-     z-index:99999;
-  text-decoration: none;
-  padding-left: 0px;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 5px;
-  font-weight: 300;
-}
-
-.contacts-bar .contacts-button a { background:url("test.html") no-repeat 0px -2px transparent; }
-
-
-#new_garden .new_garden-bar { list-style:none; margin-top: 0px;
+#new_garden .new_garden-bar { list-style:none; margin: ;
     position:fixed;
      width:100%;
-     left: 0vw;
      top:0;
-     z-index:99999; }
-#new_garden .new_garden-bar li {
+     z-index:2;
+     display: flex;
+     justify-content: center;
      width:100%;
+     left: -3.75vh;
      top:0;
-
-     z-index:99999; }
-
-#new_garden .new_garden-bar li a {
-  display: flex;
-  justify-content: center;
-
-  width:100%;
-  top:0;
-  z-index:99999;
-  text-decoration: none;
-  padding-left: 0px;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 5px;
-  font-weight: 300;
-}
+     text-decoration: none;
+     text-transform: uppercase;
+     mix-blend-mode:normal;
+     color: #ffffff;
+     font-family: 'Open Sans', sans-serif;
+     letter-spacing: 5px;
+     font-weight: 300;
+   }
 
 
 
@@ -65,14 +28,12 @@
 /* Icons courtesy of Thom : http://pixelb.in/assorted-pixel-perfect-14px-icon-set-286/ */
 
 body {
-  background: #000000;
+  background: #abcabc;
   font-size: 30px;
   color: #000;
-  background: #fffff;
   margin: 0;
   padding: 0;
   height: calc(100vh - 0vh);
-  margin: 0px;
   overflow: -moz-scrollbars-vertical;
   overflow-x: hidden;
   overflow-y: auto;
@@ -97,4 +58,167 @@ body {
   top: 0;
   background-size: cover;
   background-position: center;
+}
+
+
+body
+{
+  margin: 0;
+  padding: 0;
+
+  background: #232323;
+  color: #cdcdcd;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0px;
+  font-weight: 300;
+}
+
+a
+{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 150px;
+  opacity: 1;
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: #ffffff;
+  font-weight: 300;
+  opacity: 1;
+}
+
+
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 2.5vh;
+  opacity: 1;
+  z-index: 2;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  opacity: 1;
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  left: 70vw;
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 3; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 330px;
+  opacity: 1;
+  height: 0px;
+  margin-bottom: 5px;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  left: 80vw;
+  background: #ee0000;
+  border-radius: 3px;
+
+  z-index: 2;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 1000%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(0deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * hide the middle one
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 1;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(0deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  padding: 5vh;
+  padding-top: 15vh;
+  padding-bottom: 100vh;
+   margin: -100px 0 0 -0px;
+   box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 1), 0 60px 200px 0 rgba(0, 0, 0, 1);
+
+
+  opacity: 0.7;
+
+  background: #000000;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(0%, -110%);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 3vh;
+
+}
+
+/*
+ * slide it in
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
 }
